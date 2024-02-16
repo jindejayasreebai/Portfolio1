@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #navbar {
+            margin-left: 180px;
+            margin-top: 5%;
+            cursor: pointer;
+        }
+
+        a {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        a:hover {
+            background-color: wheat;
+            border-radius: 5px;
+        }
+
+        div {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+
+        }
+
+        div a {
+            color: blue;
+            text-decoration: none;
+            font-size: 22px;
+            position: relative;
+        }
+
+        div a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -6pX;
+            transition: 0.5s;
+        }
+
+        div a:hover::after {
+            width: 100%;
+        }
+
+    </style>
+    <title>Projects</title>
+</head>
+
+<body style="background-color: #FED9ED;">
+    <div id="navbar">
+        <a href="Home.html">Home</a>
+
+        <a href="Education.html">Education</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Certificates.html">Certificates</a>
+        <a href="Contactme.html">Contactme</a>
+        <a href="Aboutme.html">Aboutme</a>
+    </div>
+
+    <div class="project">
+        <h1>Tunehub Project</h1>
+        <ul>
+        <li><h4>Tools and Technologies : Java, HTML , CSS ,SpringBoot,MySQL, Visual Studio.</h4></li>
+        <li><p>Tunehub is a Music Streaming App</p></li>
+        <li><p>Tunehub is an online music application project focuses on developing a full-stack
+            web application that allows to user to listing there own favorite music.
+            The project leverages Java for its robust backend functionality, ensuring
+            seamless data handling and server - side operations. The frontend, on the other
+            hand, utilizes a combination of HTML, CSS and Thymeleaf template provided by
+            Spring Boot, resulting in an engaging and user-friendly interface.</p></li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h1>ShopNest Project</h1>
+        <ul>
+        <li><h4>Tools and Technologies: Java,MYSQL,HTML,CSS.</h4></li>
+        <li><p>ShopNest is an E-commerce Full Stack Web Application.
+            The Admin user can add new products where as customer can explore products,
+            add them to the cart as well as check out.
+        </p></li>
+    
+    </div>
+</body>
+
+</html>

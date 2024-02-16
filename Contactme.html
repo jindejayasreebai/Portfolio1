@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contactme</title>
+    <style>
+        #formbar {
+            margin-left: 10%;
+            margin-top: 12%;
+            margin-right: 50%;
+            cursor: pointer;
+        }
+
+        /*.btn {
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid #ff004f;
+            padding: 14px 50px;
+            border-radius: 6px;
+            color: #fff;
+            transition: background 0.5s;
+        }
+
+        .btn:hover {
+            background-color: #ff004f;
+        }*/
+        .btn.btn2 {
+            display: inline-block;
+            background: #ff0f4f;
+
+            border-radius: 10px;
+            margin: 20px;
+            margin-left: 100px;
+            text-align: center;
+
+        }
+
+        .btn {
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid #ff004f;
+            padding: 14px 50px;
+            border-radius: 6px;
+            color: skyblue;
+            transition: background 0.5s;
+        }
+
+        .btn:hover {
+            background-color: #ff004f;
+        }
+
+        #navbar {
+            margin-left: 180px;
+            margin-top: 5%;
+            cursor: pointer;
+        }
+
+        a {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        a:hover {
+            background-color: wheat;
+            border-radius: 5px;
+        }
+
+        div {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+
+        }
+
+        div a {
+            color: blue;
+            text-decoration: none;
+            font-size: 22px;
+            position: relative;
+        }
+
+        div a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -6pX;
+            transition: 0.5s;
+        }
+
+        div a:hover::after {
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+
+<body style="background-color: #F1B4BB">
+    <div id="formbar">
+        <form action="Thankyou.html">
+            <fieldset>
+                <legend>Personal Details </legend>
+                <table>
+                    <tr>
+                        <td> <label>Name</label></td>
+                        <td>
+                            <input type="text" placeholder="Enter your name" size="20" maxlength="20" name="name_box" style="height:20px"
+                                required>
+                            <br><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td><input type="email" placeholder="Ex:abc@gmail.com" size="20" maxlength="20" name="email_box" style="height:20px"
+                                required>
+                            <br><br></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Mobile Number</label></td>
+                        <td><input type="tel" placeholder="Ex:9876543210" name="mobilenumber_box" size="20" style="height:20px"
+                                maxlength="10" `required>
+                            <br><br></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td><input type="radio" name="Gender" value="M">Male</td>
+                        <td><input type="radio" name="Gender" value="F">Female</td>
+                        <td><input type="radio" name="Gender" value="O">Other</td>
+                    </tr>
+                    <tr>
+                        <td><textarea name="Message" rows="6" cols="45" placeholder="Your Message"></textarea></td>
+                    </tr>
+                </table>
+
+                <br><br>
+            </fieldset>
+            <input type="submit" value="Submit" class="btn btn2 " ><br><br>
+        </form>
+    </div>
+</body>
+
+</html>

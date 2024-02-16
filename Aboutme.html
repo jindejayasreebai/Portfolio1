@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        #navbar {
+            margin-left: 180px;
+            margin-top: 5%;
+            cursor: pointer;
+        }
+
+        a {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        a:hover {
+            background-color: wheat;
+            border-radius: 5px;
+        }
+
+        div {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+
+        }
+
+        div a {
+            color: blue;
+            text-decoration: none;
+            font-size: 22px;
+            position: relative;
+        }
+
+        div a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -6pX;
+            transition: 0.5s;
+        }
+
+        div a:hover::after {
+            width: 100%;
+        }
+
+        .btn.btn2 {
+            display: inline-block;
+            background: #ff0f4f;
+
+            border-radius: 10px;
+            margin: 20px;
+            margin-left: 260px;
+        }
+
+        .btn {
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid #ff004f;
+
+            border-radius: 6px;
+            color: #fff;
+
+            transition: background 0.5s;
+        }
+
+        .btn:hover {
+            background-color: #ff004f;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons li {
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            color: #333;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .fab fa-instagram{
+            font-size: 90px;
+            color:purple;
+        }
+    </style>
+    <title>About me</title>
+</head>
+
+<body style="background-color:#D0A2F7;">
+    <div id="navbar">
+        <a href="Home.html">Home</a>
+        <a href="Education.html">Education</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Certificates.html">Certificates</a>
+        <a href="Contactme.html">Contactme</a>
+        <a href="Aboutme.html">Aboutme</a>
+    </div>
+    <div id="imagebar" style="margin-left: 600px;margin-top: 35px;">
+        <img src="IMG-20230124-WA0025.jpg" height="30%" width="30%">
+    </div>
+    <pre><p id="textbar" style="margin-left: 300px ;font-size: 15px;margin-bottom:5px;margin-top:0;color:#333;">  
+       <b>M</b>yself <i>Jinde Jayashree</i>. I have done my Graduation in B.TECH in the Stream of Computer Science Engineering.
+        I have devoloped my personal intrest on new Technologies emerging day by day.Iam eager learner constantly trying
+        to improve my skills and stay ahead of trend.I am well acquired with <b>Java,SQL,HTML,CSS </b>Technologies.I have
+        completed my Course on Full Stack WebDevolopment.I have ability to find Solutions for the problems.I posses good
+        communication and presentation Skills. More over I have complete understanding of Java which would contribute in
+                                   upcoming projects with min supervision. </p></pre>
+    <div style="display:flex;justify-content: center;margin-top:0;margin-left:25px;">
+        <a href="Resume.pdf" target="_blank" class="btn btn2" style="margin-top:10;margin-left:20px">View CV </a>
+    </div>
+    <ul class="social-icons">
+        <a href="https://www.instagram.com/jayashree_jinde/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/jinde-jayasree-7988b4248/"><i class="fab fa-linkedin"></i></a>
+    </ul>
+</body>
+</html>
